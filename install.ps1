@@ -179,7 +179,7 @@ function InstallGames {
         Write-Host "Installed League of Legends (NA)"
     }
 
-    # U.GG
+    # U.GG (for League of Legends)
     $choice = Read-Host "Install U.GG (Y/N)?"
     if ($choice -eq "Y") {
         Write-Host "Opening a URL to install U.GG..."
@@ -187,7 +187,7 @@ function InstallGames {
         Write-Host "Opened a URL to install U.GG"
     }
 
-    # Porofessor
+    # Porofessor (for League of Legends)
     $choice = Read-Host "Install Porofessor (Y/N)?"
     if ($choice -eq "Y") {
         Write-Host "Opening a URL to install Porofessor..."
