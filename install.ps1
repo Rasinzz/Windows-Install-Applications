@@ -1,6 +1,7 @@
 $InstallEssentialApplications
 $InstallProductivity
 $InstallGames
+$InstallBrowserExtensions
 
 # Check if Winget is installed
 Write-Host "Checking if Winget is installed..."
@@ -211,6 +212,78 @@ function InstallGames {
     }
 }
 
+function InstallBrowserExtensions {
+    $choice = Read-Host "Install uBlock Origin (Y/N)?"
+    if ($choice -eq "Y") {
+        Write-Host "Opening a URL to install uBlock Origin..."
+        Start-Process "https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm"
+        Write-Host "Opened a URL to install uBlock Origin"
+    }
+
+    $choice = Read-Host "Install SponsorBlock for YouTube (Y/N)?"
+    if ($choice -eq "Y") {
+        Write-Host "Opening a URL to install SponsorBlock for YouTube..."
+        Start-Process "https://chrome.google.com/webstore/detail/sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone"
+        Write-Host "Opened a URL to install SponsorBlock for YouTube"
+    }
+
+    $choice = Read-Host "Install Bitwarden (Y/N)?"
+    if ($choice -eq "Y") {
+        Write-Host "Opening a URL to install Bitwarden..."
+        Start-Process "https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb"
+        Write-Host "Opened a URL to install Bitwarden"
+    }
+
+    $choice = Read-Host "Install Google Authenticator (Y/N)?"
+    if ($choice -eq "Y") {
+        Write-Host "Opening a URL to install Google Authenticator..."
+        Start-Process "https://chrome.google.com/webstore/detail/authenticator/bhghoamapcdpbohphigoooaddinpkbai"
+        Write-Host "Opened a URL to install Google Authenticator"
+    }
+
+    $choice = Read-Host "Install Dark Reader (Y/N)?"
+    if ($choice -eq "Y") {
+        Write-Host "Opening a URL to install Dark Reader..."
+        Start-Process "https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh"
+        Write-Host "Opened a URL to install Dark Reader"
+    }
+
+    $choice = Read-Host "Install Shazam (Y/N)?"
+    if ($choice -eq "Y") {
+        Write-Host "Opening a URL to install Shazam..."
+        Start-Process "https://chrome.google.com/webstore/detail/shazam-identify-songs-fro/mmioliijnhnoblpgimnlajmefafdfilb"
+        Write-Host "Opened a URL to install Shazam"
+    }
+
+    $choice = Read-Host "Install TTV LOL (Twitch Ad-Blocker) (Y/N)?"
+    if ($choice -eq "Y") {
+        Write-Host "Opening a URL to install TTV LOL (Twitch Ad-Blocker)..."
+        Start-Process "https://chrome.google.com/webstore/detail/ttv-lol/ofbbahodfeppoklmgjiokgfdgcndngjm"
+        Write-Host "Opened a URL to install TTV LOL (Twitch Ad-Blocker)"
+    }
+
+    $choice = Read-Host "Install nightTab (Y/N)?"
+    if ($choice -eq "Y") {
+        Write-Host "Opening a URL to install nightTab..."
+        Start-Process "https://chrome.google.com/webstore/detail/nighttab/hdpcadigjkbcpnlcpbcohpafiaefanki"
+        Write-Host "Opened a URL to install nightTab"
+    }
+
+    $choice = Read-Host "Install WhatFont (Y/N)?"
+    if ($choice -eq "Y") {
+        Write-Host "Opening a URL to install WhatFont..."
+        Start-Process "https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm"
+        Write-Host "Opened a URL to install WhatFont"
+    }
+
+    $choice = Read-Host "Install Volume Control (Y/N)?"
+    if ($choice -eq "Y") {
+        Write-Host "Opening a URL to install Volume Control..."
+        Start-Process "https://chrome.google.com/webstore/detail/volume-control-for-google/hnlfnonibbbggmlaacojkhhppaonibdp"
+        Write-Host "Opened a URL to install Volume Control"
+    }
+}
+
 $InstallEssentialApplications = Read-Host "Would you like to install Essential Applications (Y/N)?"
 if ($InstallEssentialApplications -eq "Y") {
     InstallEssentialApplications
@@ -224,4 +297,9 @@ if ($InstallProductivity -eq "Y") {
 $InstallGames = Read-Host "Would you like to install Games (Y/N)?"
 if ($InstallGames -eq "Y") {
     InstallGames
+}
+
+$InstallBrowserExtensions = Read-Host "Would you like to install Browser Extensions (Y/N)?"
+if ($InstallBrowserExtensions -eq "Y") {
+    InstallBrowserExtensions
 }
