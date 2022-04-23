@@ -218,6 +218,14 @@ function InstallGames {
         Start-Process "https://drive.google.com/file/d/1twJFPSTE0uUyv5zgkBTWkJP2BS45HPNC/view?usp=sharing"
         Write-Host "Opened a URL to install LA Roads"
     }
+
+    # Bluestacks
+    $choice = Read-Host "Install Bluestacks (Y/N)?"
+    if ($choice -eq "Y") {
+        Write-Host "Opening a URL to install Bluestacks..."
+        winget install -e --id BlueStack.BlueStacks
+        Write-Host "Opened a URL to install Bluestacks"
+    }
 }
 
 function InstallBrowserExtensions {
