@@ -49,6 +49,14 @@ function InstallEssentialApplications {
         Write-Host "Installed Corsair iCUE 4"
     }
 
+    # MSI Afterburner
+    $choice = Read-Host "Install MSI Afterburner (Y/N)?"
+    if ($choice -eq "Y") {
+        Write-Host "Opening a URL to install MSI Afterburner..."
+        Start-Process "https://www.msi.com/Landing/afterburner/graphics-cards"
+        Write-Host "Opened a URL to install MSI Afterburner"
+    }
+
     # Logitech G HUB
     $choice = Read-Host "Install Logitech G HUB (Y/N)?"
     if ($choice -eq "Y") {
@@ -100,6 +108,22 @@ function InstallEssentialApplications {
         Write-Host "Installing Steam..."
         winget install -e --id Valve.Steam
         Write-Host "Installed Steam"
+    }
+
+    # Medal TV
+    $choice = Read-Host "Install Medal TV (Y/N)?"
+    if ($choice -eq "Y") {
+        Write-Host "Installing Medal TV..."
+        winget install -e --id MedalB.V.Medal
+        Write-Host "Installed Medal TV"
+    }
+
+    # VibranceGUI
+    $choice = Read-Host "Install VibranceGUI (Y/N)?"
+    if ($choice -eq "Y") {
+        Write-Host "Opening a URL to install VibranceGUI..."
+        Start-Process "https://vibrancegui.com/vibrance/download"
+        Write-Host "Opened a URL to install VibranceGUI"
     }
 }
 
@@ -176,6 +200,14 @@ function InstallGames {
         Write-Host "Installing Epic Games Launcher..."
         winget install -e --id EpicGames.EpicGamesLauncher
         Write-Host "Installed Epic Games Launcher"
+    }
+
+    # FiveM
+    $choice = Read-Host "Install FiveM (Y/N)?"
+    if ($choice -eq "Y") {
+        Write-Host "Opening a URL to install FiveM..."
+        Start-Process "https://fivem.net/"
+        Write-Host "Opened a URL to install FiveM"
     }
 }
 
