@@ -210,6 +210,14 @@ function InstallGames {
         Start-Process "https://fivem.net/"
         Write-Host "Opened a URL to install FiveM"
     }
+
+    # LA Roads (for FiveM)
+    $choice = Read-Host "Install LA Roads (Y/N)?"
+    if ($choice -eq "Y") {
+        Write-Host "Opening a URL to install LA Roads..."
+        Start-Process "https://drive.google.com/file/d/1twJFPSTE0uUyv5zgkBTWkJP2BS45HPNC/view?usp=sharing"
+        Write-Host "Opened a URL to install LA Roads"
+    }
 }
 
 function InstallBrowserExtensions {
