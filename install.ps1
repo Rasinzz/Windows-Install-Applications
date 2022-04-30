@@ -161,6 +161,14 @@ function InstallProductivity {
         Write-Host "Installed Obsidian"
     }
 
+    # OpenIV
+    $choice = Read-Host "Install OpenIV (Y/N)?"
+    if ($choice -eq "Y") {
+        Write-Host "Opening a URL to install OpenIV..."
+        Start-Process "https://openiv.com/"
+        Write-Host "Opened a URL to install OpenIV"
+    }
+
     # Python 3
     $choice = Read-Host "Install Python 3 (Y/N)?"
     if ($choice -eq "Y") {
