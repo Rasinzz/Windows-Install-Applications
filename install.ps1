@@ -153,6 +153,14 @@ function InstallProductivity {
         Write-Host "Installed GitHub Desktop"
     }
 
+    # Obsidian
+    $choice = Read-Host "Install Obsidian (Y/N)?"
+    if ($choice -eq "Y") {
+        Write-Host "Installing Obsidian..."
+        winget install -e --id Obsidian.Obsidian
+        Write-Host "Installed Obsidian"
+    }
+
     # Python 3
     $choice = Read-Host "Install Python 3 (Y/N)?"
     if ($choice -eq "Y") {
