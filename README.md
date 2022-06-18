@@ -1,6 +1,3 @@
-# Windows-Install-Applications
-A Powershell script to install applications on Windows
-
 ## How to Run
 Paste this command into Windows Powershell (Admin)
 ```
